@@ -2,6 +2,7 @@ import { Avatar, Button } from '@mui/material'
 import React, { useState } from 'react'
 import "./TweetBox.css"
 import { collection, addDoc } from "firebase/firestore"; 
+import db from "../../Firebase"
 
 function TweetBox() {
 const [tweetMassage, setTweetMessage] = useState("")
@@ -9,6 +10,13 @@ const [tweetImage, setTweetImage] = useState("")
 
 const sendTweet = (e) => {
   e.preventDefault();
+
+  addDoc(collection(db, "posts"), {
+        displayName:"まさと",
+        text:tweetMassage,
+        avatar:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0TLYaG2LxhC1F2ep4YLzGrvNY7iyQYEJnw&s",
+        image:tweetImage,
+  })
 
 
 };
