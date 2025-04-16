@@ -3,22 +3,22 @@ import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Post.css"
 
-function Post() {
+function Post({displayName, username, text, image, avatar}) {
   return (
     <div className='post'>
         <div className='post-avatar'>
-            <Avatar />
+            <Avatar src={avatar} />
         </div>
         <div className='post-body'>
         <div className='post-header'>
             <div className='post-headerText'>
-                <h3>まさと</h3>
+                <h3>{displayName}</h3>
             </div>
             <div className='post-headerDescription'>
-                <p>こんにちは</p>
+                <p>{text}</p>
             </div>
         </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzA2iaeUJl__7CSGyVvL_kyeUhHDJ2LK5qdw&s"/>
+        <img src={image}/>
         <div className='post-footer'>
             <ChatBubbleOutline fontSize='small' />
             <Repeat fontSize='small'/>
