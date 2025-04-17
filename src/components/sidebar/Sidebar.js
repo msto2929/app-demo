@@ -20,7 +20,7 @@ function Sidebar() {
         <Looks4Icon className="sidebar_Looks4Icon"/>
 
         {/* サイドバーオプション */}
-        <SidebarOption text="ホーム" Icon={HomeIcon}/>
+        <SidebarOption text="ホーム" Icon={HomeIcon} active/>
         <SidebarOption text="検索" Icon={SearchIcon}/>
         <SidebarOption text="通知" Icon={NotificationsNoneIcon}/>
         <SidebarOption text="メッセージ" Icon={MailOutlineIcon}/>
