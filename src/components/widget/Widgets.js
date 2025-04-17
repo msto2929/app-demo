@@ -14,7 +14,7 @@ function Widgets() {
 
 
         <div className='widgets-widgetContainer'>
-            <h2>よしりんX投稿まとめ</h2>
+            <h2>吉野敏明X投稿まとめ</h2>
     
             <TwitterTimelineEmbed />
 
