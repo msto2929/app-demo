@@ -17,7 +17,7 @@ function TweetBox() {
       await addDoc(collection(db, "posts"), {
         displayName: "まさと",
         text: tweetMessage,
-        avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo0TLYaG2LxhC1F2ep4YLzGrvNY7iyQYEJnw&s",
+        avatar: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh02MThGHzJpfb8N4JLTUeiULNOIUHxJJj2u0zKQIwQ62DJFW9a28m3ajQbQ6wSOZ1meChuuzxs755IFxkPXJqKLZBSPw3A5ukcZmzsi7J3XzEMW-0_V5H-ynJrU45Qav1ybl9cTTD3H1o/s800/icon_others_08.png",
         image: tweetImage,
         timestamp: serverTimestamp(),
       });
@@ -36,7 +36,7 @@ function TweetBox() {
         <div className='tweetBox-Input'>
           <Avatar />
           <input
-            placeholder='4毒抜き仲間にシェアしよう'
+            placeholder='いまどうしてる？'
             type='text'
             value={tweetMessage}
             onChange={(e) => setTweetMessage(e.target.value)}

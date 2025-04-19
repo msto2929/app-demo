@@ -1,7 +1,6 @@
 import { Search } from '@mui/icons-material'
 import React from 'react'
-import { useEffect } from 'react';
-import TwitterTimelineEmbed from './TwitterTimelineEmbed';
+
 import "./Widgets.css"
 
 function Widgets() {
@@ -13,13 +12,6 @@ function Widgets() {
         </div>
 
 
-        <div className='widgets-widgetContainer'>
-            <h2>吉野敏明X投稿まとめ</h2>
-    
-            <TwitterTimelineEmbed />
-
-
-        </div>
     </div>
   )
 }
